@@ -1,12 +1,7 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<body>
-  <Navigation />
-
-  <h1>Blog</h1>
-  <h2>... and my new Astro site!</h2>
-
+<BaseLayout pageTitle="Blog">
   <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
   <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
@@ -15,4 +10,4 @@ import Navigation from '../components/Navigation.astro';
     <li><a href="/blog/post-2/">Post 2</a></li>
     <li><a href="/blog/post-3/">Post 3</a></li>
   </ul>
-</body>
+</BaseLayout>

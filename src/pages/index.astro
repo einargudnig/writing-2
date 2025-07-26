@@ -1,18 +1,11 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-    <Navigation />
- 
-		<h1>My astro site</h1>
-	</body>
-</html>
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Welcome to My Astro Site!</h2>
+  <p>This is the home page of my new Astro site. I'm excited to share my journey as I learn more about web development with Astro.</p>
+  <p>Check out the <a href="/about/">About</a> page to learn more about me and what I'm working on!</p>
+</BaseLayout>
