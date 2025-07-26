@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@webtui/css": "^0.1.4",
     "astro": "^5.12.3"
   }
 }
